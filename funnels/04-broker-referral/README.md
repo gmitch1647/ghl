@@ -79,17 +79,11 @@ Friday → Workflow 6 (weekly payout batch)
 
 ## What I still need from Gary before this can go live
 
-These map to the placeholders in `config.md` and the open questions in `workflows/affiliate-onboarding.md`:
-
-1. **Contract placeholders** (5 of them):
-   - `[Company Mailing Address]` and `[City, State, ZIP]` — likely 1647 Watersprings Way, Dacula, GA 30019 (per GHL location); confirm
-   - `affiliates@dreamgatesolutions.com` — does this inbox exist? Or use `gmitch1647@gmail.com`?
-   - `[STATE]` for governing law (§15) — likely Georgia; confirm
-   - `[COUNTY, STATE]` for venue (§16) — likely Gwinnett County, Georgia; confirm
-2. **Company signatory** — printed name + title for the Dreamgate Solutions LLC signature block on the contract
-3. **Payout rail decision** — Stripe Connect (cleanest for weekly ACH), PayPal, or manual
-4. **Minimum payout amount** — contract is silent; pick a number (default placeholder: $50)
-5. **Existing clients earning on own deals** — default no (per `config.md`); confirm
+1. **LLC mailing address** for contract §25 (not the GHL location address — Gary said use a different one). Need street + city/state/ZIP.
+2. **Company signatory block** — printed name + title for the Dreamgate Solutions LLC signature on the contract (e.g., "Gary Mitchell, Managing Member").
+3. **Email infrastructure** — `affiliates@dreamgatesolutions.com` mailbox + DKIM/SPF/DMARC for `dreamgatesolutions.com` so contract-send emails don't go to spam.
+4. **Minimum payout amount** — contract is silent; pick a number (default placeholder: $50).
+5. **Existing clients earning on own deals** — default is no; confirm.
 6. **CS/dispute contact** — Gary alone, or someone else?
 
 **Resolved:**
@@ -97,3 +91,7 @@ These map to the placeholders in `config.md` and the open questions in `workflow
 - Payout cadence: weekly, contingent on Company receipt of funds (per signed contract §3)
 - Legal entity: Dreamgate Solutions LLC
 - Brand on funding side: Dream Gate Financial (kept as marketing name)
+- Governing law (§15): **Georgia**
+- Venue (§16): **Fulton County, Georgia**
+- From-sender: `affiliates@dreamgatesolutions.com` (to be set up; placeholder is `gmitch1647@gmail.com` until then)
+- Payout rail (v1): manual ACH/check; revisit Stripe Connect once volume justifies

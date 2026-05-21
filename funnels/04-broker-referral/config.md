@@ -32,7 +32,7 @@ funding side.
 | Setting | Value | Source |
 |---|---|---|
 | Cadence | **Weekly** — once corresponding funds received by Company | Contract §3, Schedule 1 |
-| Methods | TBD — confirm with Gary. Default ACH, PayPal, Check (US only) | Not in contract |
+| Methods | Manual ACH/check in v1; switch to Stripe Connect once volume ≥ 5 payouts/week | TBD payout rail |
 | Minimum payout | TBD — confirm with Gary (was $50 placeholder; contract is silent) | Not in contract |
 | W-9 / W-8 required | Yes — payment may be suspended pending receipt | Contract §3 |
 | 1099-NEC | Issued by Jan 31 if annual Fees ≥ $600 | Standard IRS |
@@ -55,20 +55,29 @@ funding side.
 - Cannot be a current Dreamgate Solutions employee
 - Existing clients may refer others but cannot earn commission on their own deals
 
-## Contract placeholders to fill before launch
+## Contract placeholders — status
 
-The contract.docx is final on terms but has these template placeholders. Resolve all of
-these and regenerate the .docx (or have Gary update the source) before uploading to GHL
-Documents & Contracts:
+The contract.docx is final on terms but has template placeholders. Gary confirmed several
+of these on 2026-05-21. Remaining items must be resolved before uploading to GHL Documents
+& Contracts.
 
-| Placeholder | Where | Suggested value | Needs from Gary |
-|---|---|---|---|
-| `[Company Mailing Address]` | §25 Notices | 1647 Watersprings Way (from GHL location) — confirm | ✅ confirm |
-| `[City, State, ZIP]` | §25 Notices | Dacula, GA 30019 — confirm | ✅ confirm |
-| `affiliates@dreamgatesolutions.com` | §25 Notices | Decide: real `affiliates@` inbox OR use `gmitch1647@gmail.com` | ✅ decide |
-| `[STATE]` (governing law) | §15 | Likely Georgia (based on location) | ✅ confirm |
-| `[COUNTY, STATE]` (venue) | §16 | Likely Gwinnett County, Georgia | ✅ confirm |
-| Company signature block | end of doc | Gary signs as Authorized Rep — provide printed name + title | ✅ provide |
+| Placeholder | Where | Status / Value |
+|---|---|---|
+| `[Company Mailing Address]` | §25 Notices | ⏳ **Awaiting from Gary** — explicitly NOT the GHL location address; provide the LLC's actual mailing address (registered agent, P.O. box, or business address) |
+| `[City, State, ZIP]` | §25 Notices | ⏳ **Awaiting from Gary** — pair with mailing address above |
+| `affiliates@dreamgatesolutions.com` | §25 Notices | ✅ Confirmed. Leave as-is in the contract. Gary will set up this mailbox before launch. |
+| `[STATE]` (governing law) | §15 | ✅ **Georgia** |
+| `[COUNTY, STATE]` (venue) | §16 | ✅ **Fulton County, Georgia** |
+| Company signature block | end of doc | ⏳ **Awaiting from Gary** — printed name + title (e.g., "Gary Mitchell, Managing Member") |
+
+## Email infrastructure — pre-launch
+
+Before the contract-send workflow can run, this needs to exist:
+
+- Domain mail setup for `dreamgatesolutions.com`
+- Mailbox: `affiliates@dreamgatesolutions.com`
+- DKIM / SPF / DMARC configured so GHL emails don't land in spam
+- This same address is the From / Reply-To for affiliate program emails (replace `gmitch1647@gmail.com` in custom value `affiliate_program_email`)
 
 ## Links (replace with real values after pages built)
 
