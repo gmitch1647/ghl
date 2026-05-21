@@ -45,5 +45,5 @@ sequence and into our active-affiliate updates.
 
 —
 Gary Mitchell
-Dream Gate Financial
+Dreamgate Solutions LLC
 {{custom_values.affiliate_program_email}} · {{custom_values.affiliate_program_phone}}

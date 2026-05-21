@@ -1,6 +1,6 @@
 # Email 1 — Welcome
 
-**Trigger:** Tag `affiliate-approved` added (manual or via workflow)
+**Trigger:** Tag `affiliate-active` added (= contract signed; set by Workflow 2)
 **Delay:** Immediate
 **Subject:** You're in. Here's your link.
 **Preheader:** Plus the 2 things to do this week.
@@ -9,7 +9,7 @@
 
 {{contact.first_name}},
 
-You're approved as a Dream Gate Financial affiliate. Here's your tracking link:
+Agreement signed, account is live. Here's your tracking link:
 
 **https://[domain]/funding?aff={{contact.affiliate_id}}**
 
@@ -33,7 +33,7 @@ Reply to this email with any questions. I read every one.
 
 —
 Gary Mitchell
-Dream Gate Financial
+Dreamgate Solutions LLC
 {{custom_values.affiliate_program_email}} · {{custom_values.affiliate_program_phone}}
 
 P.S. If you haven't sent your W-9 yet, here's the secure form: [W-9 LINK]. No W-9, no

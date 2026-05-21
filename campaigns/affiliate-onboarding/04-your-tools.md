@@ -27,7 +27,7 @@ short and human.
 >
 > Hey [name] —
 >
-> Quick one. I started partnering with a business funding outfit called Dream Gate Financial.
+> Quick one. I started partnering with a business funding outfit called Dreamgate Solutions LLC.
 > They've funded a few people in my network in the last 60 days, all in under 72 hours.
 >
 > If you're sitting on a cash flow gap, equipment buy, or just want a credit line in your back
@@ -51,7 +51,7 @@ short and human.
 
 **4. Reply to a Facebook group post asking "where do small biz owners get funding fast?"**
 
-> I refer clients to Dream Gate Financial — they fund $10K–$2M in 24–72 hrs, no collateral on
+> I refer clients to Dreamgate Solutions LLC — they fund $10K–$2M in 24–72 hrs, no collateral on
 > most products. They've done several deals in my network this year. Here's the application
 > link if it's useful: [your-link]
 >
@@ -85,5 +85,5 @@ specific contact.
 
 —
 Gary Mitchell
-Dream Gate Financial
+Dreamgate Solutions LLC
 {{custom_values.affiliate_program_email}} · {{custom_values.affiliate_program_phone}}

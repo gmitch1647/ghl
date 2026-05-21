@@ -1,13 +1,13 @@
 # Campaign — Affiliate Onboarding
 
-7-email sequence sent to newly approved affiliates. Goal: get them from "approved" to
-"first referral sent" inside 14 days.
+7-email sequence sent to newly activated affiliates (= signed the Dreamgate Affiliate
+Agreement). Goal: get them from "active" to "first referral sent" inside 14 days.
 
 ## Sequence
 
 | # | File | Send delay | Trigger | Subject | Primary CTA |
 |---|---|---|---|---|---|
-| 1 | `01-welcome.md` | Immediate (on approval) | Tag added: `affiliate-approved` | Welcome — here's your link | Click to view your link |
+| 1 | `01-welcome.md` | Immediate | Tag added: `affiliate-active` (set by Workflow 2 on contract signed) | Welcome — here's your link | Click to view your link |
 | 2 | `02-how-it-works.md` | +1 day | Time delay | How you get paid (in 60 seconds) | View commission terms |
 | 3 | `03-ideal-client.md` | +3 days | Time delay | The exact business owner to send us | Save the ideal-client one-pager |
 | 4 | `04-your-tools.md` | +5 days | Time delay | Your swipe pack (copy + paste) | Open the swipe pack |
@@ -17,8 +17,8 @@
 
 ## Send rules
 
-- Sender name: **Gary Mitchell** (personal, not "Dream Gate Financial Team")
-- From address: `gmitch1647@gmail.com` (or `gary@[domain]` once domain is set up)
+- Sender name: **Gary Mitchell** (personal, not "Dreamgate Solutions Team")
+- From address: `gmitch1647@gmail.com` (or `gary@dreamgatesolutions.com` once domain is set up)
 - Reply-to: same as from
 - All emails plain-text style — no big headers, no stock photos. Looks like a real email.
 - Send time: 9:00 AM ET, recipient's local timezone if available
@@ -29,10 +29,10 @@
 | Token | Source |
 |---|---|
 | `{{contact.first_name}}` | Standard |
-| `{{custom_values.affiliate_commission_rate}}` | "2%" |
-| `{{custom_values.affiliate_payout_cadence}}` | "net-30 from funded date" |
-| `{{custom_values.affiliate_minimum_payout}}` | "$50" |
-| `{{custom_values.affiliate_attribution_window}}` | "90 days" |
+| `{{custom_values.affiliate_commission_rate}}` | `2%` |
+| `{{custom_values.affiliate_payout_cadence}}` | `weekly, once funds are received by the Company` |
+| `{{custom_values.affiliate_payment_contingency}}` | Contract §3 contingency sentence — see `funnels/04-broker-referral/config.md` |
+| `{{custom_values.affiliate_attribution_window}}` | `90 days` |
 | `{{contact.affiliate_id}}` | Per-affiliate unique code |
 | `{{custom_values.affiliate_program_email}}` | Reply-to email |
 | `{{custom_values.affiliate_program_phone}}` | Footer phone |
@@ -42,10 +42,10 @@
 ```
 —
 Gary Mitchell
-Dream Gate Financial
+Dreamgate Solutions LLC
 {{custom_values.affiliate_program_email}} · {{custom_values.affiliate_program_phone}}
 
-You're getting this because you joined the Dream Gate Financial affiliate program.
+You're getting this because you joined the Dreamgate Solutions affiliate program.
 Unsubscribe: {{unsubscribe_url}}
 ```
 

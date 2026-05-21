@@ -44,5 +44,5 @@ Friday I'll send you the swipe pack — five more pre-written messages for email
 
 —
 Gary Mitchell
-Dream Gate Financial
+Dreamgate Solutions LLC
 {{custom_values.affiliate_program_email}} · {{custom_values.affiliate_program_phone}}

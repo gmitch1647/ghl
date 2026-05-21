@@ -12,12 +12,12 @@ Conversion benchmark to beat: 8% visitor → application start.
 Get paid 2% every time someone you refer gets funded.
 
 **Sub-headline:**
-No caps. No tiers. No quotas. We fund their business, you get a check on the 30th.
+No caps. No tiers. No quotas. We fund their business, you get paid weekly.
 
 **Primary CTA button:** `Apply to the program →`
 
 **Trust strip under CTA (small text):**
-US-based · Net-30 payout · Pays via ACH, PayPal, or check
+US-based · Weekly payouts · Pays via ACH, PayPal, or check
 
 ---
 
@@ -32,7 +32,7 @@ Three-column block, plain numbers, no graphics needed:
 | 1 business owner | $250,000 | **$5,000** |
 
 Caption under table:
-*2% of the funded amount, paid net-30 after the deal closes. Average funded deal in our pipeline: $80K–$150K.*
+*2% of the Amount Funded, paid weekly once we've collected our fee from the lender. Average funded deal in our pipeline: $80K–$150K.*
 
 ---
 
@@ -58,16 +58,19 @@ You talk to small business owners every day. We give you a tracked link and swip
 Four-step row, numbered:
 
 **1. Apply**
-Three-minute form. We approve most applications within one business day.
+Three-minute form. We respond to most applications within one business day.
 
-**2. Get your link**
-You get a unique tracking link plus swipe copy for email, DM, and SMS.
+**2. Sign the agreement**
+We email you the affiliate contract for e-signature. Standard terms, no surprises.
 
-**3. Refer**
+**3. Get your link**
+On signing, you get a unique tracking link plus swipe copy for email, DM, and SMS.
+
+**4. Refer**
 Send your link to business owners who need funding. We handle the call, the underwriting, the close.
 
-**4. Get paid**
-When they fund, we email you. Commission hits your account net-30.
+**5. Get paid**
+When the deal funds and we collect our fee, your 2% goes out in the next weekly payout (Fridays).
 
 ---
 
@@ -90,19 +93,19 @@ We are not a loan broker shopping you to 40 lenders. We have direct relationship
 
 ## Section 6 — The terms in plain English
 
-Two-column block, bullets only — no walls of text. Full agreement linked.
+Two-column block, bullets only — no walls of text. The full agreement is emailed to you for e-signature after you apply.
 
 **You get paid when:**
 - Your referred business funds with us
+- We actually collect our fee from the lender (without that, no one gets paid — including us)
 - They are a NEW lead (not already in our CRM)
-- We receive your W-9 (one time only)
+- We have your W-9 on file (one time only)
 
 **You don't get paid when:**
 - The lead is already in our system
 - The referred business doesn't qualify or chooses not to fund
+- The deal funds but the lender claws back, defaults, or fails to pay our fee
 - More than 90 days pass between their first click on your link and their funding
-
-**Link:** `View the full affiliate agreement →` (links to `/affiliate/agreement`)
 
 ---
 
@@ -115,7 +118,7 @@ There's no cap. Top broker partners send 5–10 funded deals a month. At an aver
 You get a unique link. Anyone who clicks it gets cookied for 90 days. When they fund, the commission attaches to your account. You also get an email the moment they enter our pipeline.
 
 **When do I get paid?**
-Net-30 from the funded date. Minimum payout is $50. ACH is fastest, PayPal also works, checks for US addresses only.
+Weekly. Every Friday we run payouts. Your commission joins that week's batch as soon as the lender pays us our fee on your referred deal — that can take anywhere from a few days to a couple of weeks after the deal funds. ACH is fastest, PayPal also works, checks for US addresses only.
 
 **Do I need a license to refer?**
 No. You're a marketing affiliate, not a broker of record. You're paid for marketing, not for negotiating loan terms.

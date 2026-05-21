@@ -31,7 +31,7 @@ That's it. One reply, and we know where we stand.
 
 —
 Gary Mitchell
-Dream Gate Financial
+Dreamgate Solutions LLC
 {{custom_values.affiliate_program_email}} · {{custom_values.affiliate_program_phone}}
 
 P.S. If you DO want to give it one more shot, your link is still live:
