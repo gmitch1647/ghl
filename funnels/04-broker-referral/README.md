@@ -79,16 +79,32 @@ Friday → Workflow 6 (weekly payout batch)
 
 **Manual UI work remaining (PIT auth can't cover these)**
 
-- [ ] **Create pipeline "Affiliate Partners"** in GHL UI with 6 stages: Pending Application, Contract Sent, Active Affiliate, Stalled, Suspended, Terminated. (Build script returned 401 on `/opportunities/pipelines` — PIT doesn't have this scope.)
-- [ ] Upload `contract.docx` to GHL Documents & Contracts as a template; sign the Company signature line once
-- [ ] Build the Affiliate Application form (per `signup-form.md`)
-- [ ] Build the W-9 + Payout Info form
-- [ ] Build the landing page at `/affiliate` (per `landing-page.md`)
-- [ ] Build the funding-side forms to capture `?aff=` URL param into `Referring Affiliate ID`
-- [ ] Load 7 onboarding emails into GHL campaign builder
-- [ ] Build 6 workflows (per `workflows/affiliate-onboarding.md`) as Draft
-- [ ] End-to-end test (fake signup → signs contract → receives welcome → simulated funded deal)
-- [ ] Workflows flipped from Draft → Published
+Execute via [`build-playbook.md`](./build-playbook.md) — ordered 10-step click-by-click
+guide, ~90 min end-to-end. Briefly:
+
+- [ ] Step 1: Create pipeline `Affiliate Partners` (6 stages)
+- [ ] Step 2: Upload `contract.docx` to Documents & Contracts and sign Company line once
+- [ ] Step 3: Paste `snippets/aff-tracker.js` into Footer Tracking Code (captures `?aff=` → cookie → form prefill across the sub-account)
+- [ ] Step 4: Build Affiliate Application form (18 fields per `signup-form.md`)
+- [ ] Step 5: Build W-9 + Payout Info form
+- [ ] Step 6: Build landing page at `/affiliate` per `landing-page.md`
+- [ ] Step 7: Load 7 email templates from `campaigns/affiliate-onboarding/`
+- [ ] Step 8: Build 6 workflows from `workflows/affiliate-onboarding.md` (as Draft)
+- [ ] Step 9: End-to-end smoke test with fake email
+- [ ] Step 10: Flip workflows Draft → Published
+
+**API endpoint limits (probed; documented for the record)**
+
+The v2 API with PIT auth exposes data-model writes (fields/tags/values/contacts) but
+**not builder-content writes**. Confirmed by `scripts/probe-scopes.js`:
+- `POST /opportunities/pipelines` → 401 (no scope)
+- `POST /forms` → 404 (no endpoint)
+- `POST /documents/templates` → 404
+- `POST /workflows` → 404
+- `POST /funnels/funnel` → 404
+- `POST /emails/builder` → 201 but `name` + content fields are silently dropped (useless)
+
+So Steps 1–8 above genuinely require the UI.
 
 ## What I still need from Gary
 
