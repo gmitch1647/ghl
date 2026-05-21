@@ -8,7 +8,7 @@
 | Setting | Value | Notes |
 |---|---|---|
 | Structure | Percentage of funded amount | Confirmed |
-| Rate | **2.0%** | PLACEHOLDER — confirm with Gary. Industry range 1–4%; 2% is a safe middle for open-audience program |
+| Rate | **2.0%** | Confirmed. 2% of the gross funded amount on every Qualifying Referral. |
 | Minimum payout | $50 | Below this we hold until next deal |
 | Maximum per single deal | None | Open ceiling |
 | Eligible products | Business funding only (MCA + 0% biz funding) | Credit repair NOT in v1 |

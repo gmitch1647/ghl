@@ -45,8 +45,10 @@ Same commission structure for all three — no separate tiers in v1. Revisit tie
 
 ## Open questions (resolve before launch)
 
-1. Final commission percentage (see `config.md` — placeholder is 2%).
-2. Payout cadence — net-30 after funded? net-15? On receipt of W-9? (see `config.md`)
-3. Tax form requirement threshold (W-9 required from $0 or only above $600/yr?)
-4. Who owns affiliate disputes (Gary alone, or a CS contact)?
-5. Are existing clients eligible to earn commission on their own future deals? (Default: no.)
+1. Payout cadence — net-30 after funded? net-15? On receipt of W-9? (see `config.md`)
+2. Tax form requirement threshold (W-9 required from $0 or only above $600/yr?)
+3. Who owns affiliate disputes (Gary alone, or a CS contact)?
+4. Are existing clients eligible to earn commission on their own future deals? (Default: no.)
+
+**Resolved:**
+- Commission rate: 2% of gross funded amount (confirmed by Gary, 2026-05-21)
