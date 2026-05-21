@@ -55,20 +55,20 @@ funding side.
 - Cannot be a current Dreamgate Solutions employee
 - Existing clients may refer others but cannot earn commission on their own deals
 
-## Contract placeholders — status
+## Contract placeholders — all resolved
 
-The contract.docx is final on terms but has template placeholders. Gary confirmed several
-of these on 2026-05-21. Remaining items must be resolved before uploading to GHL Documents
-& Contracts.
+All template placeholders in `contract.docx` have been filled in. The .docx in this repo
+is the upload-ready version for GHL Documents & Contracts.
 
-| Placeholder | Where | Status / Value |
-|---|---|---|
-| `[Company Mailing Address]` | §25 Notices | ⏳ **Awaiting from Gary** — explicitly NOT the GHL location address; provide the LLC's actual mailing address (registered agent, P.O. box, or business address) |
-| `[City, State, ZIP]` | §25 Notices | ⏳ **Awaiting from Gary** — pair with mailing address above |
-| `affiliates@dreamgatesolutions.com` | §25 Notices | ✅ Confirmed. Leave as-is in the contract. Gary will set up this mailbox before launch. |
-| `[STATE]` (governing law) | §15 | ✅ **Georgia** |
-| `[COUNTY, STATE]` (venue) | §16 | ✅ **Fulton County, Georgia** |
-| Company signature block | end of doc | ⏳ **Awaiting from Gary** — printed name + title (e.g., "Gary Mitchell, Managing Member") |
+| Where | Value |
+|---|---|
+| §15 Choice of Law | Georgia |
+| §16 Venue | Fulton County, Georgia |
+| §25 Company mailing address | 8735 Dunwoody Place, Ste R, Atlanta, GA 30350 |
+| §25 Program email | affiliates@dreamgatesolutions.com (mailbox setup pending) |
+| Company signature block — Printed Name | Gary Mitchell |
+| Company signature block — Title | Managing Member |
+| Company signature block — Signature + Date | Left blank — to be e-signed once at GHL template upload |
 
 ## Email infrastructure — pre-launch
 

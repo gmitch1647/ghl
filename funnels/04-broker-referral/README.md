@@ -67,8 +67,8 @@ Friday → Workflow 6 (weekly payout batch)
 - [x] `contract.md` text version saved for diffing
 - [x] Email sequence written (7 emails)
 - [x] Workflow spec written (6 workflows incl. contract e-sign and weekly payout)
-- [ ] **Contract placeholders resolved** (state, county, mailing address, etc. — see `config.md`)
-- [ ] Final `.docx` uploaded to GHL Documents & Contracts as a template
+- [x] Contract placeholders resolved (state, county, mailing address, signatory)
+- [ ] Final `.docx` uploaded to GHL Documents & Contracts as a template (needs Gary's one-time Company e-signature on the template before publishing)
 - [ ] GHL custom fields, tags, custom values, pipeline created
 - [ ] Signup form built in GHL
 - [ ] Landing page built in GHL page builder
@@ -79,19 +79,23 @@ Friday → Workflow 6 (weekly payout batch)
 
 ## What I still need from Gary before this can go live
 
-1. **LLC mailing address** for contract §25 (not the GHL location address — Gary said use a different one). Need street + city/state/ZIP.
-2. **Company signatory block** — printed name + title for the Dreamgate Solutions LLC signature on the contract (e.g., "Gary Mitchell, Managing Member").
-3. **Email infrastructure** — `affiliates@dreamgatesolutions.com` mailbox + DKIM/SPF/DMARC for `dreamgatesolutions.com` so contract-send emails don't go to spam.
-4. **Minimum payout amount** — contract is silent; pick a number (default placeholder: $50).
-5. **Existing clients earning on own deals** — default is no; confirm.
-6. **CS/dispute contact** — Gary alone, or someone else?
+1. **Email infrastructure** — `affiliates@dreamgatesolutions.com` mailbox + DKIM/SPF/DMARC for `dreamgatesolutions.com` so contract-send emails don't go to spam.
+2. **Minimum payout amount** — contract is silent; pick a number (default placeholder: $50).
+3. **Existing clients earning on own deals** — default is no; confirm.
+4. **CS/dispute contact** — Gary alone, or someone else?
 
 **Resolved:**
 - Commission rate: 2% of Amount Funded (per signed contract §3, Schedule 1)
 - Payout cadence: weekly, contingent on Company receipt of funds (per signed contract §3)
 - Legal entity: Dreamgate Solutions LLC
 - Brand on funding side: Dream Gate Financial (kept as marketing name)
-- Governing law (§15): **Georgia**
-- Venue (§16): **Fulton County, Georgia**
-- From-sender: `affiliates@dreamgatesolutions.com` (to be set up; placeholder is `gmitch1647@gmail.com` until then)
+- Contract §15 Governing law: Georgia
+- Contract §16 Venue: Fulton County, Georgia
+- Contract §25 Company mailing address: 8735 Dunwoody Place, Ste R, Atlanta, GA 30350
+- Contract company signatory: Gary Mitchell, Managing Member
+- From-sender: `affiliates@dreamgatesolutions.com` (placeholder is `gmitch1647@gmail.com` until mailbox is live)
 - Payout rail (v1): manual ACH/check; revisit Stripe Connect once volume justifies
+
+**Contract status:** `contract.docx` is now fully populated and ready to upload as a GHL
+Documents & Contracts template. The only remaining step before upload is Gary signing
+the Company signature line once (becomes part of every affiliate's countersigned copy).

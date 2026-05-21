@@ -1,13 +1,16 @@
 # Dreamgate Affiliate Agreement — Text Version
 
-> **Source of truth:** `contract.docx` (uploaded by Gary). This `.md` file is the same
-> agreement in plain text for code review, diffing, and AI-assisted analysis. If they
-> ever drift apart, the `.docx` wins because that is what gets uploaded to GHL Documents
-> & Contracts and signed by affiliates.
+> **Source of truth:** `contract.docx` (uploaded by Gary, finalized 2026-05-21). This
+> `.md` file is the same agreement in plain text for code review, diffing, and
+> AI-assisted analysis. If they ever drift apart, the `.docx` wins because that is what
+> gets uploaded to GHL Documents & Contracts and signed by affiliates.
 >
-> **Placeholders to fill before publishing:** `[Company Mailing Address]`,
-> `[City, State, ZIP]`, `affiliates@dreamgatesolutions.com` (confirm or replace),
-> `[STATE]` (governing law, section 15), `[COUNTY, STATE]` (venue, section 16).
+> **Placeholders status (all resolved):**
+> - §15 STATE → Georgia
+> - §16 COUNTY, STATE → Fulton County, Georgia
+> - §25 Company mailing address → 8735 Dunwoody Place, Ste R, Atlanta, GA 30350
+> - §25 program email → affiliates@dreamgatesolutions.com (needs mailbox setup)
+> - Company signature block → Gary Mitchell, Managing Member
 >
 > **Merge fields used by GHL Documents & Contracts:**
 > `{{contact.full_name}}`, `{{contact.address1}}`, `{{contact.city}}`,
@@ -187,11 +190,11 @@ You may not assign this Agreement. Any attempted assignment or transfer in viola
 
 ## 15.  CHOICE OF LAW
 
-This Agreement shall be governed by the laws of the State of `[STATE]`, without regard to its conflict of laws rules or principles.
+This Agreement shall be governed by the laws of the State of Georgia, without regard to its conflict of laws rules or principles.
 
 ## 16.  VENUE
 
-Affiliate hereby consents to exclusive jurisdiction and venue in the state and federal courts located in `[COUNTY, STATE]` for all proceedings arising out of this Agreement that are not subject to arbitration.
+Affiliate hereby consents to exclusive jurisdiction and venue in the state and federal courts located in Fulton County, Georgia for all proceedings arising out of this Agreement that are not subject to arbitration.
 
 ## 17.  DISPUTE RESOLUTION
 
@@ -233,9 +236,9 @@ Any notices or other communications required or permitted hereunder shall be suf
 
 To the Company:
 Dreamgate Solutions LLC
-`[Company Mailing Address]`
-`[City, State, ZIP]`
-Email: `[affiliates@dreamgatesolutions.com]`
+8735 Dunwoody Place, Ste R
+Atlanta, GA 30350
+Email: affiliates@dreamgatesolutions.com
 
 To the Affiliate:
 `{{contact.full_name}}`
@@ -254,8 +257,8 @@ IN WITNESS WHEREOF, the Parties hereto have executed this Agreement as of the da
 **DREAMGATE SOLUTIONS LLC**
 
 Authorized Signature: ______________________________
-Printed Name: ______________________________
-Title: ______________________________
+Printed Name: Gary Mitchell
+Title: Managing Member
 Date: ______________________________
 
 **THE AFFILIATE**
