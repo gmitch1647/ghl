@@ -43,7 +43,7 @@ workflows/    Automation JSON exports / build specs
 - [ ] **1. MCA / Business Funding Application** — small business owners, working capital
 - [ ] **2. Consultation Booking** — qualified leads → calendar
 - [ ] **3. Credit Repair Lead Magnet** — consumer audience
-- [ ] **4. Broker / Referral Partner Signup** — partner recruitment
+- [~] **4. Broker / Referral Partner Signup** — partner recruitment (specs + copy done, see `funnels/04-broker-referral/`)
 - [ ] **5. Business Credit Builder** — entrepreneurs building business credit
 - [ ] **6. Webinar / Lead Magnet Opt-in** — top-of-funnel capture
 
