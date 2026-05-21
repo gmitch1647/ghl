@@ -1,0 +1,16 @@
+{
+  "name": "ghl",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GoHighLevel build-out for credit & funding business (funnels, campaigns, workflows)",
+  "scripts": {
+    "test:connection": "node scripts/test-connection.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
