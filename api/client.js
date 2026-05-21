@@ -97,6 +97,22 @@ export class GHLClient {
   getTags() {
     return this.get(`/locations/${this.locationId}/tags`);
   }
+  createTag(name) {
+    return this.post(`/locations/${this.locationId}/tags`, { name });
+  }
+
+  // ---------- Custom Values ----------
+  getCustomValues() {
+    return this.get(`/locations/${this.locationId}/customValues`);
+  }
+  createCustomValue(payload) {
+    return this.post(`/locations/${this.locationId}/customValues`, payload);
+  }
+
+  // ---------- Create pipeline ----------
+  createPipeline(payload) {
+    return this.post('/opportunities/pipelines', { locationId: this.locationId, ...payload });
+  }
 
   // ---------- Users ----------
   getUsers() {

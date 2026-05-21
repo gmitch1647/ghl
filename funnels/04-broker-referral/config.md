@@ -33,7 +33,7 @@ funding side.
 |---|---|---|
 | Cadence | **Weekly** — once corresponding funds received by Company | Contract §3, Schedule 1 |
 | Methods | Manual ACH/check in v1; switch to Stripe Connect once volume ≥ 5 payouts/week | TBD payout rail |
-| Minimum payout | TBD — confirm with Gary (was $50 placeholder; contract is silent) | Not in contract |
+| Minimum payout | **$50** — below this we hold until next payout cycle | Confirmed by Gary |
 | W-9 / W-8 required | Yes — payment may be suspended pending receipt | Contract §3 |
 | 1099-NEC | Issued by Jan 31 if annual Fees ≥ $600 | Standard IRS |
 
@@ -70,14 +70,17 @@ is the upload-ready version for GHL Documents & Contracts.
 | Company signature block — Title | Managing Member |
 | Company signature block — Signature + Date | Left blank — to be e-signed once at GHL template upload |
 
-## Email infrastructure — pre-launch
+## Email infrastructure
 
-Before the contract-send workflow can run, this needs to exist:
-
-- Domain mail setup for `dreamgatesolutions.com`
-- Mailbox: `affiliates@dreamgatesolutions.com`
-- DKIM / SPF / DMARC configured so GHL emails don't land in spam
-- This same address is the From / Reply-To for affiliate program emails (replace `gmitch1647@gmail.com` in custom value `affiliate_program_email`)
+- **Operational from-sender for v1:** `gmitch1647@gmail.com` (Gary's gmail). Used as
+  From/Reply-To on contract-send emails, welcome, and the onboarding sequence.
+- **Legal notices address (per contract §25):** `affiliates@dreamgatesolutions.com`.
+  Stays in the contract permanently. Mailbox does NOT need to exist on day 1 — affiliates
+  send legal notices via mail/email/courier per §25, and email is just one option. Set
+  this up before any actual dispute or notice traffic, ideally before scaling beyond a
+  handful of affiliates.
+- **When the `affiliates@` mailbox is live:** update GHL custom value `affiliate_program_email`
+  to the new address, set DKIM/SPF/DMARC, and verify in a test send.
 
 ## Links (replace with real values after pages built)
 

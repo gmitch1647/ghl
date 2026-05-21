@@ -5,7 +5,8 @@
   "type": "module",
   "description": "GoHighLevel build-out for credit & funding business (funnels, campaigns, workflows)",
   "scripts": {
-    "test:connection": "node scripts/test-connection.js"
+    "test:connection": "node scripts/test-connection.js",
+    "build:affiliate": "node scripts/build-affiliate-program.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5"

@@ -80,13 +80,17 @@ Add via Settings → Tags. Use lowercase to match existing convention.
 
 ## 3. Pipeline
 
-**New pipeline: "Affiliate Partners"** — visualizes the affiliate lifecycle. Recommended
-because the contract-send workflow needs a place to put contacts post-signing.
+**New pipeline: "Affiliate Partners"** — visualizes the affiliate lifecycle. Required
+because the contract-send workflow needs a place to put opportunities post-signing.
+
+**⚠️ Must be created manually in GHL UI.** PIT-auth tokens don't have the
+`opportunities/pipelines.write` scope, so `npm run build:affiliate` returns 401 on this
+endpoint. Create it via: Opportunities → Pipelines → New Pipeline.
 
 Stages (in order):
 1. `Pending Application` — opportunity created on form submit
 2. `Contract Sent` — moved here when GHL Documents & Contracts sends agreement
-3. `Active Affiliate` — moved here on signature (referenced by setup doc)
+3. `Active Affiliate` — moved here on signature
 4. `Stalled` — auto-moved if unsigned in 14 days
 5. `Suspended`
 6. `Terminated`

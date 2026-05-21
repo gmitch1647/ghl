@@ -61,39 +61,53 @@ Friday → Workflow 6 (weekly payout batch)
 
 ## Build status
 
+**Spec phase — complete**
+
 - [x] Funnel structure + landing-page copy
 - [x] Signup form fields specced (includes contract-merge fields)
-- [x] **Real affiliate agreement uploaded** (`contract.docx` from Gary)
+- [x] Real affiliate agreement uploaded (`contract.docx`)
 - [x] `contract.md` text version saved for diffing
 - [x] Email sequence written (7 emails)
 - [x] Workflow spec written (6 workflows incl. contract e-sign and weekly payout)
 - [x] Contract placeholders resolved (state, county, mailing address, signatory)
-- [ ] Final `.docx` uploaded to GHL Documents & Contracts as a template (needs Gary's one-time Company e-signature on the template before publishing)
-- [ ] GHL custom fields, tags, custom values, pipeline created
-- [ ] Signup form built in GHL
-- [ ] Landing page built in GHL page builder
-- [ ] Emails loaded into GHL campaign builder
-- [ ] Workflows built in GHL workflow builder (as Draft)
+
+**GHL resources — done via `npm run build:affiliate`**
+
+- [x] 8 custom values created (commission rate, payout cadence, contingency, etc.)
+- [x] 29 custom fields created (Affiliate Title, Status, dates, counts, referred-side fields, etc.)
+- [x] 17 tags created (lifecycle + type + referred-side)
+
+**Manual UI work remaining (PIT auth can't cover these)**
+
+- [ ] **Create pipeline "Affiliate Partners"** in GHL UI with 6 stages: Pending Application, Contract Sent, Active Affiliate, Stalled, Suspended, Terminated. (Build script returned 401 on `/opportunities/pipelines` — PIT doesn't have this scope.)
+- [ ] Upload `contract.docx` to GHL Documents & Contracts as a template; sign the Company signature line once
+- [ ] Build the Affiliate Application form (per `signup-form.md`)
+- [ ] Build the W-9 + Payout Info form
+- [ ] Build the landing page at `/affiliate` (per `landing-page.md`)
+- [ ] Build the funding-side forms to capture `?aff=` URL param into `Referring Affiliate ID`
+- [ ] Load 7 onboarding emails into GHL campaign builder
+- [ ] Build 6 workflows (per `workflows/affiliate-onboarding.md`) as Draft
 - [ ] End-to-end test (fake signup → signs contract → receives welcome → simulated funded deal)
 - [ ] Workflows flipped from Draft → Published
 
-## What I still need from Gary before this can go live
+## What I still need from Gary
 
-1. **Email infrastructure** — `affiliates@dreamgatesolutions.com` mailbox + DKIM/SPF/DMARC for `dreamgatesolutions.com` so contract-send emails don't go to spam.
-2. **Minimum payout amount** — contract is silent; pick a number (default placeholder: $50).
-3. **Existing clients earning on own deals** — default is no; confirm.
-4. **CS/dispute contact** — Gary alone, or someone else?
+Nothing blocking. All policy decisions resolved.
 
 **Resolved:**
 - Commission rate: 2% of Amount Funded (per signed contract §3, Schedule 1)
 - Payout cadence: weekly, contingent on Company receipt of funds (per signed contract §3)
+- Minimum payout: **$50**
+- Self-referrals: **not allowed** — existing clients cannot earn on their own future deals
+- Dispute / CS contact: **Gary** is sole point of contact
 - Legal entity: Dreamgate Solutions LLC
 - Brand on funding side: Dream Gate Financial (kept as marketing name)
 - Contract §15 Governing law: Georgia
 - Contract §16 Venue: Fulton County, Georgia
 - Contract §25 Company mailing address: 8735 Dunwoody Place, Ste R, Atlanta, GA 30350
 - Contract company signatory: Gary Mitchell, Managing Member
-- From-sender: `affiliates@dreamgatesolutions.com` (placeholder is `gmitch1647@gmail.com` until mailbox is live)
+- Contract §25 Legal notices email: `affiliates@dreamgatesolutions.com` (stays in contract as long-term address; mailbox + domain mail can be set up later)
+- **Operational from-sender (workflow emails, contract send, welcome, etc.):** `gmitch1647@gmail.com` for now. Switch to `affiliates@dreamgatesolutions.com` once that mailbox is live with DKIM/SPF/DMARC.
 - Payout rail (v1): manual ACH/check; revisit Stripe Connect once volume justifies
 
 **Contract status:** `contract.docx` is now fully populated and ready to upload as a GHL
